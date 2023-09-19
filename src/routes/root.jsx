@@ -2,69 +2,27 @@ import { Outlet, Link, useLoaderData, } from "react-router-dom";
 import { getContacts } from "../contacts";
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import ProjectList from "../components/projectList";
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
+import Intro from "../components/intro";
+import { Container, Menu, MenuItem } from "@mui/material";
+import Home from "../pages/home";
+import NavMenu from "../components/navMenu";
 
 export async function loader() {
-    const contacts = await getContacts();
-    return { contacts };
-  }
+  const contacts = await getContacts();
+  return { contacts };
+}
 
 export default function Root() {
-    const { contacts } = useLoaderData();
     return (
       <>
-        <div id="sidebar">
-          <h1>React Router Contacts</h1>
-          <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
-            <form method="post">
-              <Button variant="contained">Hello</Button>
-            </form>
-          </div>
-          <nav>
-          {contacts.length ? (
-            <ul>
-              {contacts.map((contact) => (
-                <li key={contact.id}>
-                  <Link to={`contacts/${contact.id}`}>
-                    {contact.first || contact.last ? (
-                      <>
-                        {contact.first} {contact.last}
-                      </>
-                    ) : (
-                      <i>No Name</i>
-                    )}{" "}
-                    {contact.favorite && <span>★</span>}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>
-              <i>No contacts</i>
-            </p>
-          )}
-          </nav>
-        </div>
-        <div id="detail">
-            <Outlet />
-        </div>
+        <Container>
+          <NavMenu />
+          <Home />
+        </Container>
       </>
     );
   }
