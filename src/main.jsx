@@ -3,10 +3,12 @@ import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
+  Routes,
+  Route,
+  BrowserRouter
 } from "react-router-dom";
 import "./index.css";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
 import Root, { loader as rootLoader } from "./routes/root";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -14,21 +16,10 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader,
-    children: [
-      {
-        path: "contacts/:contactId",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
+import Home from "./routes/home";
+import NavMenu from "./components/navMenu";
+import { Container } from "@mui/system";
+import AboutMe from "./routes/aboutMe";
 
 const darkTheme = createTheme({
   palette: {
@@ -39,8 +30,21 @@ const darkTheme = createTheme({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
+    <Container>
+      <NavMenu />
       <CssBaseline />
-      <RouterProvider router={router} />
+      <BrowserRouter errorElement={<ErrorPage />}>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route
+              path="home"
+              element={<Home />}
+            />
+          </Route>
+          <Route path="/aboutme" element={<AboutMe />} />
+      </Routes>
+      </BrowserRouter>
+    </Container>
     </ThemeProvider>
   </React.StrictMode>
 );

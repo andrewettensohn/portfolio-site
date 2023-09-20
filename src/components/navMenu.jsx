@@ -9,23 +9,24 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Stack } from '@mui/material';
+import { Link } from "react-router-dom";
 
 export default function NavMenu() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
   return (
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
+          <AppBar position="fixed">
             <Toolbar>
-              <IconButton
+            <IconButton
                 onClick={handleClick}
                 size="large"
                 edge="start"
@@ -49,10 +50,21 @@ export default function NavMenu() {
                 'aria-labelledby': 'basic-button',
                 }}
                 >
-                    <MenuItem onClick={handleClose}>Projects</MenuItem>
-                    <MenuItem onClick={handleClose}>Work Experience</MenuItem>
-                    <MenuItem onClick={handleClose}>About Me</MenuItem>
+                <MenuItem><a href='/'>Home</a></MenuItem>
+                <MenuItem><a href='/aboutme'>Personal Projects</a></MenuItem>
+                <MenuItem><a href='/aboutme'>Work Experience</a></MenuItem>
+                <MenuItem><a href='/aboutme'>About Me</a></MenuItem>
                 </Menu>
+                <Box sx={{ width: '100%' }}>
+                    <Stack direction="row" justifyContent="flex-end" alignItems="center">
+                        <IconButton href='https://github.com/andrewettensohn'>
+                            <GitHubIcon />
+                        </IconButton>
+                        <IconButton href='https://www.linkedin.com/in/andrew-ettensohn-685721187'>
+                            <LinkedInIcon />
+                        </IconButton>
+                    </Stack>
+                </Box>
             </Toolbar>
           </AppBar>
         </Box>

@@ -29,7 +29,7 @@ export default function Intro() {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography>
-                        Welcome to my portfolio site! I love building tools that make people's lives easier and I'm also very passionate about game development.
+                        Welcome to my portfolio site! I love building tools that make people's lives easier and I'm also very passionate about game development. Take a look at what I've been up to!
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
