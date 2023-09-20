@@ -4,11 +4,11 @@ import ImageListItem from '@mui/material/ImageListItem';
 import { Box } from '@mui/system';
 
 
-export default function GalleryOfMe() {
+export default function ImageGallery({props}) {
     return (
         <Box>
             <ImageList cols={3}>
-                {itemData.map((item) => (
+                {props.imageData.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
                     srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
@@ -22,30 +22,3 @@ export default function GalleryOfMe() {
         </Box>
     );
   }
-  
-  const itemData = [
-    {
-        img: 'me/knight.png',
-        title: 'knight',
-    },
-    {
-      img: 'me/rainer.jpg',
-      title: 'SolarStrike',
-    },
-    {
-        img: 'me/books.jpg',
-        title: 'Endevrian',
-    },
-    {
-      img: 'me/east.jpg',
-      title: 'Kanban',
-    },
-    {
-        img: 'me/cosmicRolling.jpg',
-        title: 'Honey',
-    },
-    {
-        img: 'me/seattle.jpg',
-        title: 'Me But cool',
-    },
-  ];
