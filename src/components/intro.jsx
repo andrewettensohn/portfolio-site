@@ -18,7 +18,7 @@ export default function Intro() {
                 </Grid>
                 <Grid item xs={12} md={7} lg={10} container spacing={2}>
                     <Grid item xs={12}>
-                        <Typography variant="h2">
+                        <Typography variant="h4">
                         Andrew Ettensohn
                         </Typography>
                     </Grid>

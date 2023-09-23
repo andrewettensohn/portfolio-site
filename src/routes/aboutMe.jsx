@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Container } from "@mui/material";
 import NavMenu from "../components/navMenu";
+import { Box } from '@mui/system';
 
 export default function AboutMe() {
     return (
-        <Container>
+        <Box sx={{ mt: 10 }}>
             <div>About me</div>
-        </Container>
+        </Box>
     );
   }
