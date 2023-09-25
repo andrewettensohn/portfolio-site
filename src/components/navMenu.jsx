@@ -55,7 +55,7 @@ export default function NavMenu() {
                 <MenuItem><a href='/aboutme'>Work Experience</a></MenuItem>
                 <MenuItem><a href='/aboutme'>About Me</a></MenuItem>
                 </Menu>
-                <Box sx={{ width: '100%' }}>
+                <Box>
                     <Stack direction="row" justifyContent="flex-end" alignItems="center">
                         <IconButton href='https://github.com/andrewettensohn'>
                             <GitHubIcon />
