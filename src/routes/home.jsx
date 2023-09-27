@@ -27,7 +27,7 @@ export default function Home() {
                   return (
                     <Grid item>
                       <Card sx={{ width: 286, height: 286 }} raised={true} variant="outlined">
-                        <CardActionArea sx={{ width: 286, height: 286 }}>
+                        <CardActionArea sx={{ width: 286, height: 286 }} href={x.page}>
                             <CardMedia
                               component="img"
                               image={x.img}
@@ -178,30 +178,36 @@ const descriptionDataPersonalProjects = [
     name: "Fell Deeds",
     type: "2D Unity Game",
     img: 'felldeeds/CoverImage.PNG',
+    page: '/felldeeds'
   },
   {
     name: "Solar Strike",
     type: "2D Godot 4 Game",
     img: 'solarstrike/splashscreen.png',
+    page: '/felldeeds'
   },
   {
     name: "Endevrian",
     type: "D&D Campaign Management Tool",
     img: 'endevrian/desktop-end-home.png',
+    page: '/felldeeds'
   },
   {
     name: "Wrath & Glory",
     type: "Table-top RPG companion app",
     img: 'wrathandglory/PromoImage2.png',
+    page: '/felldeeds'
   },
   {
     name: "KanbanLite",
     type: "Project Management Tool",
     img: 'kanbanlite/PromoImageKanban.png',
+    page: '/felldeeds'
   },
   {
     name: "BlazorNews",
     type: "Hacker News Remake",
     img: 'blazornews/desktop-hnb-light.png',
+    page: '/felldeeds'
   },
 ]

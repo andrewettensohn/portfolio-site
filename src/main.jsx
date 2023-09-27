@@ -19,6 +19,7 @@ import Home from "./routes/home";
 import NavMenu from "./components/navMenu";
 import { Container } from "@mui/system";
 import AboutMe from "./routes/aboutMe";
+import FellDeeds from "./routes/felldeeds";
 
 const darkTheme = createTheme({
   palette: {
@@ -41,6 +42,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             />
           </Route>
           <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/felldeeds" element={<FellDeeds />} />
       </Routes>
       </BrowserRouter>
     </Container>

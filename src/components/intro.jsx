@@ -33,7 +33,7 @@ export default function Intro() {
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Button variant="outlined" href="resume.pdf">
+                        <Button variant="outlined" href="resume.pdf" target="_blank" rel="noopener noreferrer">
                             Resume
                         </Button>
                     </Grid>
