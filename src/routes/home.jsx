@@ -11,7 +11,7 @@ import { Stack } from "@mui/system";
 
 export default function Home() {
     return (
-      <Box sx={{ mt: 10 }}>
+      <Box sx={{ mt: 10, mb: 10 }}>
         <Grid container spacing={10}>
           <Grid item>
               <Intro />
@@ -61,7 +61,7 @@ export default function Home() {
                   return(
                     <Grid item>
                       <Card sx={{ width: 286, height: 400 }} raised={true} variant="outlined">
-                        <CardActionArea sx={{ width: 286, height: 400 }}>
+                        <CardActionArea sx={{ width: 286, height: 400 }} href={x.page}>
                           <ImageGallery props={{imageData: x.imgData}} />
                             <CardContent>
                               <Typography gutterBottom variant="h5" component="div">
@@ -102,6 +102,13 @@ export default function Home() {
                   </Grid>
               </Grid>
           </Grid>
+          <Grid item xs={12}>
+            <Stack direction="row" justifyContent="center" alignItems="center">
+              <Typography gutterBottom>
+                This site was made by me.
+              </Typography>
+            </Stack>
+          </Grid>
         </Grid>
       </Box>
     );
@@ -138,6 +145,7 @@ const workExperienceInfo = [
   {
     name: "Publix Super Markets",
     description: "7 years as a Software Engineer, Tester, IT Analyst, and Stock Clerk.",
+    page: '/publix',
     imgData: [
       {
         img: 'work/meatballs.jpg',
@@ -156,6 +164,7 @@ const workExperienceInfo = [
   {
     name: "ProbablyMonsters",
     description: "A year and a half as a Build and Release Engineer.",
+    page: '/probablymonsters',
     imgData: [
       {
         img: 'work/pmlogo.jpg',
@@ -177,37 +186,31 @@ const descriptionDataPersonalProjects = [
   {
     name: "Fell Deeds",
     type: "2D Unity Game",
-    img: 'felldeeds/CoverImage.PNG',
+    img: 'felldeeds/Layer1-2.png',
     page: '/felldeeds'
   },
   {
     name: "Solar Strike",
     type: "2D Godot 4 Game",
-    img: 'solarstrike/splashscreen.png',
-    page: '/felldeeds'
+    img: 'solarstrike/Screenshot 2023-08-11 000105.png',
+    page: '/solarstrike'
   },
   {
     name: "Endevrian",
     type: "D&D Campaign Management Tool",
     img: 'endevrian/desktop-end-home.png',
-    page: '/felldeeds'
+    page: '/endevrian'
   },
   {
     name: "Wrath & Glory",
     type: "Table-top RPG companion app",
     img: 'wrathandglory/PromoImage2.png',
-    page: '/felldeeds'
+    page: '/wrathandglory'
   },
   {
-    name: "KanbanLite",
-    type: "Project Management Tool",
-    img: 'kanbanlite/PromoImageKanban.png',
-    page: '/felldeeds'
-  },
-  {
-    name: "BlazorNews",
-    type: "Hacker News Remake",
-    img: 'blazornews/desktop-hnb-light.png',
-    page: '/felldeeds'
-  },
+    name: "UE5 Course",
+    type: "Unreal C++ Developer Course",
+    img: 'unreal/photo_2023-09-27_10-59-42.jpg',
+    page: '/unreal'
+  }
 ]

@@ -20,6 +20,12 @@ import NavMenu from "./components/navMenu";
 import { Container } from "@mui/system";
 import AboutMe from "./routes/aboutMe";
 import FellDeeds from "./routes/felldeeds";
+import WrathAndGlory from "./routes/wrathandglory";
+import SolarStrike from "./routes/solarstrike";
+import UnrealCourse from "./routes/unrealCourse";
+import ProbablyMonsters from "./routes/probablyMonsters";
+import Publix from "./routes/publix";
+import Endevrian from "./routes/endevrian";
 
 const darkTheme = createTheme({
   palette: {
@@ -43,6 +49,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           </Route>
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/felldeeds" element={<FellDeeds />} />
+          <Route path="/wrathandglory" element={<WrathAndGlory />} />
+          <Route path="/solarstrike" element={<SolarStrike />} />
+          <Route path="/unreal" element={<UnrealCourse />} />
+          <Route path="/probablymonsters" element={<ProbablyMonsters />} />
+          <Route path="/publix" element={<Publix />} />
+          <Route path="/endevrian" element={<Endevrian />} />
       </Routes>
       </BrowserRouter>
     </Container>

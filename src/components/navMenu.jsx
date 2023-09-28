@@ -12,6 +12,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Stack } from '@mui/material';
 import { Link } from "react-router-dom";
+import HomeIcon from '@mui/icons-material/Home';
 
 export default function NavMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -26,7 +27,7 @@ export default function NavMenu() {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="fixed">
             <Toolbar>
-            <IconButton
+            {/* <IconButton
                 onClick={handleClick}
                 size="large"
                 edge="start"
@@ -54,9 +55,12 @@ export default function NavMenu() {
                 <MenuItem><a href='/aboutme'>Personal Projects</a></MenuItem>
                 <MenuItem><a href='/aboutme'>Work Experience</a></MenuItem>
                 <MenuItem><a href='/aboutme'>About Me</a></MenuItem>
-                </Menu>
+                </Menu> */}
                 <Box>
                     <Stack direction="row" justifyContent="flex-end" alignItems="center">
+                        <IconButton href='/'>
+                          <HomeIcon />
+                        </IconButton>
                         <IconButton href='https://github.com/andrewettensohn'>
                             <GitHubIcon />
                         </IconButton>

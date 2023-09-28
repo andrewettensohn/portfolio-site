@@ -54,7 +54,7 @@ export default function FellDeeds() {
                 <Grid item xs={12}>
                     <Typography>
                         Non-linearity is very complicated, it's not the best feature to focus on for a new game developer.
-                        In a lot of ways the creation of this game felt like a trial by fire. In the first version I had branching dialouge, a quest system, non-linear levels, collectables, and several enemy types.
+                        In a lot of ways the creation of this game felt like a trial by fire. In the first version I had branching dialogue, a quest system, non-linear levels, collectables, and several enemy types.
                         By the end I was focusing on just making a linear experience as I grappled with the struggles of game design. 
                         That first version was completed, you could play it from start to end but it's not worth your time.
                         I force my friends to playtest my games and the feedback I was getting was "it's way too hard and way too tedious".
@@ -95,8 +95,8 @@ export default function FellDeeds() {
                     </Typography>
                     <Typography gutterBottom>
                         I was reading Masters of Doom while I was making this game, the classic story of John Romero and John Carmack creating the original 1993 Doom.
-                        That book coupled with my frontal lobe fully developing allowed me to come to the realisation that the most important thing in game design isn't story
-                        and no one is going to care that you have this non-linear nightmare labirnth of a dungeon, rougelike gameplay, a "great" story, and another 100 half baked features.
+                        That book coupled with my frontal lobe fully developing allowed me to come to the realization that the most important thing in game design isn't story
+                        and no one is going to care that you have this non-linear nightmare labyrinth of a dungeon, rougelike gameplay, a "great" story, and another 100 half baked features.
                         What matters is the core gameplay loop, can the second to second gameplay feel good. One polished feature is worth 100 unpolished half baked ideas. 
                     </Typography>
                 </Grid>
@@ -119,7 +119,7 @@ export default function FellDeeds() {
                         It's a platformer, jumping has to feel good. I learned the value of greyboxing and spent days making sure the jumping felt better.
                         It's also got some action in it, likewise I spent plenty of time focusing on the player's attacks. 
                         I introduced stagger mechanics, the player gets a chance to adjust before another enemy attack can land on them.
-                        Movement and combat, these were some basic puzzles I was presenting the player that would remain intresting for several minutes.
+                        Movement and combat, these were some basic puzzles I was presenting the player that would remain interesting for several minutes.
                     </Typography>
                     <Typography>
                         After making sure those core features were in place I added some special abilities that the player could do: a dash, an arrow deflection, and a rapid attack.
@@ -146,14 +146,50 @@ export default function FellDeeds() {
                 <Grid item xs={12}>
                     <Typography>
                         To keep the player interested past the first few minutes, I developed a diverse cast of bad guys. 
+                        The skeleton is basic, it walks up and swings, it has a couple of variations where they'll have either a shield or spear but the idea remains the same.
+                        There's a few flying enemies like the flying eye, an acolyte that shoots fire, and the high health ghost warrior.
+                        There's plenty of other enemy types I won't go over, but the idea was to present challenges that would make the player switch their approach to combat as much as possbile.
+                        To further mix things up there's a range of traps that are meant to force the player into moving in directions with different timing.
+                        Each level also presents a mini-boss for the player to fight in an arena with a few traps.
                     </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <img
+                        srcSet={imgData[8]}
+                        src={imgData[8]}
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="h5" gutterBottom>
                         Code
                     </Typography>
                     <Typography>
-                        
+                        The main take away I had from coding Fell Deeds was how powerful inheritance was.
+                        Every enemy in the game inherits from a shared Enemy class.
+                        That shared class contains behavior trees, hooks for animations and effects, and logic that allows for raycasting.
+                        I implemented overrides of the base Enemy class when needed, often for special abilities that make an enemy type standout.
+                        I took a similar approach of using a base class with traps, pickups, and triggers.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <img
+                        srcSet={imgData[7]}
+                        src={imgData[7]}
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography>
+                        By the time I was finished I felt pretty comfortable making animations in Unity. 
+                        Also, ideas like raycasting and pathfinding with A* didn't seem as complicated as they used to be.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="h5" gutterBottom>
+                        Postmortem
                     </Typography>
                 </Grid>
             </Grid>
@@ -168,7 +204,9 @@ export default function FellDeeds() {
     'felldeeds/belowthesands.png',
     'felldeeds/olddialouge.png',
     'felldeeds/Layer2-3.png',
-    'felldeeds/Layer3-1.png'
+    'felldeeds/Layer3-1.png',
+    'felldeeds/Layer1Media.gif',
+    'felldeeds/Layer1Boss.gif'
   ]
 
     const coverImageData = {

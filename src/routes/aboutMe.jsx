@@ -36,7 +36,9 @@ export default function AboutMe() {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography gutterBottom>
-                    I moved to Seattle in May 2022 after living the majority of my life in Lakeland, FL. 
+                    I lived in Lakeland, FL for the majority of my life where I worked for Publix Super Markets while attending Polk State College. 
+                    I graduated in 2019 with a BAS in Business Information Technology and switched from IT to software development.
+                    After helping to make Publix's new inventory system, I was hired by ProbablyMonsters and moved out to Seattle in April 2022.
                     </Typography>
                     <Typography>
                     I’m in constant awe of Seattle from the views of the waterfront to looking up and being surrounded by glass towers. The first time I visited I felt an overwhelming sense that things were happening in Seattle.
@@ -88,12 +90,26 @@ export default function AboutMe() {
                     />
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography gutterBottom>
-                        BLAH BHA
-                    </Typography>
                     <Typography>
-                        BLAH BLAH BLAH
+                        I spend a lot of time doing Jiu-Jitsu, it's a full body workout that's great if you want new interesting injuries all the time.
+                        The picture here is of an event called cosmic rolling where there's a fog machine, disco ball, and 80s music.
                     </Typography>
+                </Grid>
+                <Grid item xs={6}>
+                    <Typography>
+                        I love reading and watching video essays about game design and the history of the game industry.
+                        Some of my favorite series are Dark Souls, Halo, Fallout, Half Life, Left 4 Dead, Total War, Homeworld, Splinter Cell...this list could get really long.
+                        I do want to mention The Outer Wilds and Disco Elysium as well, it's hard to say what my favorite game is but those two are in the top 5.
+                    </Typography>
+                </Grid>
+                <Grid item xs={6}>
+                    <img
+                        srcSet={booksImageData.img}
+                        src={booksImageData.img}
+                        alt={booksImageData.title}
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
                 </Grid>
             </Grid>
         </Box>
@@ -118,5 +134,10 @@ export default function AboutMe() {
 
     const rollingImageData = {
         img: 'me/cosmicRolling.jpg',
+        title: 'Endevrian',
+    }
+
+    const booksImageData = {
+        img: 'me/books.jpg',
         title: 'Endevrian',
     }
