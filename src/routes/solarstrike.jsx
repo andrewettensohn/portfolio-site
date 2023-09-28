@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function SolarStrike() {
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box sx={{ mt: 10, mb: 10 }}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Card>
@@ -60,10 +60,17 @@ export default function SolarStrike() {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography>
-                        At the heart of most RTS games is the basic rock paper scissors formula.
+                        At the heart of most RTS games is the basic rock paper scissors formula. 
+                        A category of a unit needs to be strong against one type and weak against another.
+                        I have 3 categories of ships:
                     </Typography>
+                    <ul>
+                        <li>Picket: Strong against drone ships, weak against cruisers</li>
+                        <li>Drone: Strong against cruisers, weak against pickets</li>
+                        <li>Cruisers: Strong against picket, weak against drones</li>
+                    </ul>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={6}>
                     <img
                         srcSet={imgData[0]}
                         src={imgData[0]}
@@ -71,17 +78,34 @@ export default function SolarStrike() {
                         style={{ width:'auto', maxWidth:'100%' }}
                     />
                 </Grid>
-                <Grid item xs={12}>
-                    <Typography variant="h5" gutterBottom>
-                        Hosting
+                <Grid item xs={6}>
+                    <Typography>
+                        The special abilities of the units also support the formula while adding in a reflex challenge for the player.
+                        I had looked at a number of RTS games for UI inspiration but none of them felt great.
+                        I opted for a new design that I hadn't seen before that kept the ability buttons close to the unit information.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography>
-                        Keeping a 1:1 copy of a database on a ton of different devices would be a nightmare to maintain, especially with a constantly changing database structure.
-                        Enter the SyncModel, a data model that represents when a piece of data has been modified along with a JSON serialized object that contains the actual data.
-                        The desktop app has a local SQLite database that can be used offline, it polls the API and reconciles changes by overwriting the JSON value with whatever is latest.
+                    <Typography variant="h5" gutterBottom>
+                        Postmortem
                     </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    The goal of this project was to see if I could make an RTS.
+                    My focus was on making a bite sized project I could finish with polish.
+                    Although the game only has an old fashioned skirmish mode, I think it showcases some decent game design.
+                    I believe I made effective use of inheritance, all of the ships inherit from a single Unit class.
+                    I enjoyed figuring out challenges like making a "drag to select" box.
+                    The art style I came up with also looks really unique, I'd love to use it again.
+                    Maybe one day I'll fork this code and make an RTS in this style at a much larger scale.
+                </Grid>
+                <Grid item xs={12}>
+                    <img
+                        srcSet={imgData[1]}
+                        src={imgData[1]}
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
                 </Grid>
             </Grid>
         </Box>

@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function WrathAndGlory() {
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box sx={{ mt: 10, mb: 10 }}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Card>
@@ -66,11 +66,6 @@ export default function WrathAndGlory() {
                     />
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography variant="h5" gutterBottom>
-                        Architecture
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
                     <Typography>
                         There's two frontend versions for this project. A Blazor Electron .NET desktop app and a React Typescript web app.
                         The backend is a .NET API that utilizes a SQLite database.
@@ -109,16 +104,6 @@ export default function WrathAndGlory() {
                         loading="lazy"
                         style={{ width:'auto', maxWidth:'100%' }}
                     />
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography variant="h5" gutterBottom>
-                        Hosting
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography>
-                        I used Netlify for hosting the React Typescript project and Azure for the .NET API.
-                    </Typography>
                 </Grid>
             </Grid>
         </Box>

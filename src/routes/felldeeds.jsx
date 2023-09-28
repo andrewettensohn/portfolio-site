@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function FellDeeds() {
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box sx={{ mt: 10, mb: 10 }}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Card>
@@ -171,6 +171,8 @@ export default function FellDeeds() {
                         That shared class contains behavior trees, hooks for animations and effects, and logic that allows for raycasting.
                         I implemented overrides of the base Enemy class when needed, often for special abilities that make an enemy type standout.
                         I took a similar approach of using a base class with traps, pickups, and triggers.
+                        By the time I was finished I felt pretty comfortable making animations in Unity. 
+                        Also, ideas like raycasting and pathfinding with A* didn't seem as complicated as they used to be.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -180,17 +182,6 @@ export default function FellDeeds() {
                         loading="lazy"
                         style={{ width:'auto', maxWidth:'100%' }}
                     />
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography>
-                        By the time I was finished I felt pretty comfortable making animations in Unity. 
-                        Also, ideas like raycasting and pathfinding with A* didn't seem as complicated as they used to be.
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography variant="h5" gutterBottom>
-                        Postmortem
-                    </Typography>
                 </Grid>
             </Grid>
         </Box>

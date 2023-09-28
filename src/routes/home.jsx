@@ -62,7 +62,13 @@ export default function Home() {
                     <Grid item>
                       <Card sx={{ width: 286, height: 400 }} raised={true} variant="outlined">
                         <CardActionArea sx={{ width: 286, height: 400 }} href={x.page}>
-                          <ImageGallery props={{imageData: x.imgData}} />
+                          <CardMedia
+                              component="img"
+                              image={x.img}
+                              alt={x.name}
+                              width={150}
+                              height={150}
+                            />
                             <CardContent>
                               <Typography gutterBottom variant="h5" component="div">
                                 {x.name}
@@ -146,39 +152,13 @@ const workExperienceInfo = [
     name: "Publix Super Markets",
     description: "7 years as a Software Engineer, Tester, IT Analyst, and Stock Clerk.",
     page: '/publix',
-    imgData: [
-      {
-        img: 'work/meatballs.jpg',
-        title: 'SolarStrike',
-      },
-      {
-        img: 'work/publixThumbsUp.jpg',
-        title: 'Kanban',
-      },
-      {
-        img: 'work/publixStore.jpg',
-        title: 'Honey',
-      },
-    ]
+    img: 'work/Publix-brandmark-copy.jpg',
   },
   {
     name: "ProbablyMonsters",
     description: "A year and a half as a Build and Release Engineer.",
     page: '/probablymonsters',
-    imgData: [
-      {
-        img: 'work/pmlogo.jpg',
-        title: 'Endevrian',
-      },
-      {
-        img: 'work/pmoffice.jpg',
-        title: 'WrathAndGlory',
-      },
-      {
-        img: 'work/concord.jpg',
-        title: 'Concord',
-      },
-    ]
+    img: 'work/pmlogo.jpg',
   }
 ]
 

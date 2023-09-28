@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function ProbablyMonsters() {
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box sx={{ mt: 10, mb: 10 }}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Card>
