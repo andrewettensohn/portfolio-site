@@ -15,8 +15,11 @@ export default function Publix() {
                             <Typography variant="h4" gutterBottom>
                                 Publix Super Markets
                             </Typography>
-                            <Typography>
+                            <Typography gutterBottom>
                                 January 2015 - December 2021
+                            </Typography>
+                            <Typography gutterBottom>
+                            People That Helped Me Along the Way: Ryan Bowser, Brien Kenyon, Christen Harmon, Michelle Oliver, Sam Gaskins, Kevin Thomas
                             </Typography>
                         </CardContent>
                     </Card>
@@ -29,6 +32,7 @@ export default function Publix() {
                     A few months turned into seven years.
                     I worked my way through college and thanks to Publix's tuition reimbursement program I graduated debt free.
                     During those seven years I worked my way up from bagger to software engineer.
+                    It's difficult to capture so much time in only a few paragraphs but this page serves as a decent summary outside of the bullet points on my resume.
                 </Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -46,45 +50,59 @@ export default function Publix() {
                         I was incredibly motivated to graduate college and move into a position where I could code as much as possible.
                     </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <Typography variant="h5">
                        Software Quality Assurance
                     </Typography>
                     <Typography>
-                        I worked in QA briefly.
+                        I worked in QA briefly and spent about half of the time writing automated tests before Publix had came up with the title of Test Automation Engineer.
+                        This was my first chance to work on Publix's inventory system.
+                        I had plenty of knowledge about how the stores worked but now I really needed to understand the difference between a SKU and GTIN and how you organize that in a database (one SKU has many GTIN by the way).
+                        Then there were barcode types like UPC-E, UPC-A, and EAN-13 that I would spend hours scanning.
+                        I technically wasn't assigned to the new inventory system project at first, but I would finish my work as quickly as possible on the old system so that I could help the devs with the new one.
+                        The manager that would end up hiring me as a dev once said "it would take a grenade to get Andrew out of the team room".
+                        The team room was a giant cubicle where we were packed in like sardines working on the new system, my first desk in there was actually a shelf that one of my co-workers setup for me.
+                        During this time I worked every single day on learning C# and JavaScript outside of work so that I could be selected as a dev.
                     </Typography>
                 </Grid>
-                {/* <Grid item xs={12}>
-                    <ImageGallery props={{imageData: imgData }} />
-                </Grid> */}
+                <Grid item xs={12}>
+                    <Typography variant="h5">
+                       Software Engineer
+                    </Typography>
+                    <Typography>
+                        By 2020 I was a dev working on the new inventory system, I was beyond excited, I felt like I had been unleashed finally.
+                        I was fullstack which meant writing SQL, JavaScript, and C# on web and mobile with Xamarin.
+                        One of my first projects was replacing an old app for making signs a new feature in our inventory system, it took me a while to realize that thousands of people were now using the apps I was making.
+                        During my time on the team I spent a lot of effort reading ancient source code written in a variety of languages and then doing some reverse engineering.
+                        I also led several refactor efforts that focused on performance like a large rewrite to our item search API and a rewrite of the backend for creating inventory adjustments.
+                        My work was solid enough that our principal engineer wanted to keep me close in order to take on more difficult tasks like authorization and key management as well as prototyping.
+                    </Typography>
+                </Grid>
+                <Grid item xs={6}>
+                    <img
+                        srcSet="work/publixThumbsUp.jpg"
+                        src="work/publixThumbsUp.jpg"
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
+                </Grid>
+                <Grid item xs={6}>
+                    <img
+                        srcSet="work/meatballs.jpg"
+                        src="work/meatballs.jpg"
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
+                </Grid>
+                <Grid item xs={12}>
+                    <img
+                        srcSet="work/IMG_20191016_132223.jpg"
+                        src="work/IMG_20191016_132223.jpg"
+                        loading="lazy"
+                        style={{ width:'auto', maxWidth:'100%' }}
+                    />
+                </Grid>
             </Grid>
         </Box>
     );
   }
-
-  const imageDataOfMe = [
-    {
-        img: 'me/knight.png',
-        title: 'knight',
-    },
-    {
-      img: 'me/rainer.jpg',
-      title: 'SolarStrike',
-    },
-    {
-        img: 'me/books.jpg',
-        title: 'Endevrian',
-    },
-    {
-      img: 'me/east.jpg',
-      title: 'Kanban',
-    },
-    {
-        img: 'me/cosmicRolling.jpg',
-        title: 'Honey',
-    },
-    {
-        img: 'me/seattle.jpg',
-        title: 'Me But cool',
-    },
-  ];

@@ -61,10 +61,10 @@ export default function NavMenu() {
                         <IconButton href='/'>
                           <HomeIcon />
                         </IconButton>
-                        <IconButton href='https://github.com/andrewettensohn'>
+                        <IconButton href='https://github.com/andrewettensohn' target="_blank" rel="noopener noreferrer">
                             <GitHubIcon />
                         </IconButton>
-                        <IconButton href='https://www.linkedin.com/in/andrew-ettensohn-685721187'>
+                        <IconButton href='https://www.linkedin.com/in/andrew-ettensohn-685721187' target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon />
                         </IconButton>
                     </Stack>
