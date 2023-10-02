@@ -103,13 +103,13 @@ export default function FellDeeds() {
                 <Grid item xs={6}>
                     <Divider />
                     <Typography variant='caption'>
-                        "Story in a game is like a story in a porn movie. It's expected to be there, but it's not that important" - John Carmack
+                        "Gameplay is more important than story." - John Carmack said something like this
                     </Typography>
                     <Divider />
                 </Grid>
                 <Grid item xs={6}>
                     <Typography>
-                        The quote by John Carmack is vulgar sure, but it gets a point across. 
+                        The real quote by John Carmack is vulgar so I'm not saying it, but it gets a point across. 
                         This isn't to say a game can't have a great and compelling story but the player is here to play a game, gameplay is everything.
                     </Typography>
                 </Grid>
