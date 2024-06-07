@@ -26,6 +26,7 @@ import UnrealCourse from "./routes/unrealCourse";
 import ProbablyMonsters from "./routes/probablyMonsters";
 import Publix from "./routes/publix";
 import Endevrian from "./routes/endevrian";
+import Omen from "./routes/omen";
 
 const darkTheme = createTheme({
   palette: {
@@ -36,28 +37,29 @@ const darkTheme = createTheme({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
-    <Container>
-      <NavMenu />
-      <CssBaseline />
-      <BrowserRouter errorElement={<ErrorPage />}>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route
-              path="home"
-              element={<Home />}
-            />
-          </Route>
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/felldeeds" element={<FellDeeds />} />
-          <Route path="/wrathandglory" element={<WrathAndGlory />} />
-          <Route path="/solarstrike" element={<SolarStrike />} />
-          <Route path="/unreal" element={<UnrealCourse />} />
-          <Route path="/probablymonsters" element={<ProbablyMonsters />} />
-          <Route path="/publix" element={<Publix />} />
-          <Route path="/endevrian" element={<Endevrian />} />
-      </Routes>
-      </BrowserRouter>
-    </Container>
+      <Container>
+        <NavMenu />
+        <CssBaseline />
+        <BrowserRouter errorElement={<ErrorPage />}>
+          <Routes>
+            <Route path="/" element={<Home />}>
+              <Route
+                path="home"
+                element={<Home />}
+              />
+            </Route>
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/felldeeds" element={<FellDeeds />} />
+            <Route path="/wrathandglory" element={<WrathAndGlory />} />
+            <Route path="/solarstrike" element={<SolarStrike />} />
+            <Route path="/unreal" element={<UnrealCourse />} />
+            <Route path="/probablymonsters" element={<ProbablyMonsters />} />
+            <Route path="/publix" element={<Publix />} />
+            <Route path="/endevrian" element={<Endevrian />} />
+            <Route path="/omen" element={<Omen />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
     </ThemeProvider>
   </React.StrictMode>
 );

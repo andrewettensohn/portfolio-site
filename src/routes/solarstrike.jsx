@@ -13,7 +13,7 @@ export default function SolarStrike() {
                     <Card>
                         <CardContent>
                             <Typography variant="h4" gutterBottom>
-                                Wrath & Glory Companion
+                                Solar Strike
                             </Typography>
                             <Grid container spacing={3}>
                                 <Grid item xs={12}>
@@ -30,13 +30,13 @@ export default function SolarStrike() {
                         frameBorder='0'
                         allow='encrypted-media'
                         width="100%"
-                        height="360"
+                        height="800"
                         title='video'
                     />
                 </Grid>
                 <Grid item xs={12}>
                     <Typography>
-                        What is this? Well this one comes with a trailer to help explain that. 
+                        What is this? Well this one comes with a trailer to help explain that.
                         It's a sci-fi real time strategy game I made with Godot 4.
                     </Typography>
                 </Grid>
@@ -60,7 +60,7 @@ export default function SolarStrike() {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography>
-                        At the heart of most RTS games is the basic rock paper scissors formula. 
+                        At the heart of most RTS games is the basic rock paper scissors formula.
                         A category of a unit needs to be strong against one type and weak against another.
                         I have 3 categories of ships:
                     </Typography>
@@ -75,7 +75,7 @@ export default function SolarStrike() {
                         srcSet={imgData[0]}
                         src={imgData[0]}
                         loading="lazy"
-                        style={{ width:'auto', maxWidth:'100%' }}
+                        style={{ width: 'auto', maxWidth: '100%' }}
                     />
                 </Grid>
                 <Grid item xs={6}>
@@ -104,15 +104,15 @@ export default function SolarStrike() {
                         srcSet={imgData[1]}
                         src={imgData[1]}
                         loading="lazy"
-                        style={{ width:'auto', maxWidth:'100%' }}
+                        style={{ width: 'auto', maxWidth: '100%' }}
                     />
                 </Grid>
             </Grid>
         </Box>
     );
-  }
+}
 
-  const imgData = [
+const imgData = [
     'solarstrike/Screenshot 2023-08-11 000105.png',
     'solarstrike/strike1.png',
-  ]
+]
