@@ -74,25 +74,6 @@ export default function ProbablyMonsters() {
                         I would take on as much project work as I could while also dealing with the possibility of a Slack message getting sent my way at any minute.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    <Typography variant="h5">
-                       Games I Worked On
-                    </Typography>
-                    <Typography>
-                        I'm hoping I'll be able to add more to this section later.
-                        The only game that I worked on that's been publicly announced is Firewalk Studio's Concord coming in 2024.
-                        I loved working on Concord!
-                        I can't say much more than that but having the chance to work with Firewalk was great and I'll miss the people I worked with as they go off and do big things for Sony.
-                    </Typography>
-                </Grid>
-                <Grid item xs={6}>
-                    <img
-                        srcSet="work/concord.jpg"
-                        src="work/concord.jpg"
-                        loading="lazy"
-                        style={{ width:'auto', maxWidth:'100%' }}
-                    />
-                </Grid>
                 <Grid item xs={6}>
                     <img
                         srcSet="work/PXL_20230109_213630281.jpg"
