@@ -13,7 +13,7 @@ export default function Omen() {
                     <Card>
                         <CardContent>
                             <Typography variant="h4" gutterBottom>
-                                Omen
+                                OMEN - Coming in 2025
                             </Typography>
                         </CardContent>
                     </Card>
@@ -28,7 +28,7 @@ export default function Omen() {
                 </Grid>
                 <Grid item xs={6}>
                     <Typography>
-                    Infiltrate the remnants of a fallen empire in this dark sci-fi isometric action game where extraction meets base defense. Extract valuable loot, establish defenses against hostile fanatics, and unlock the gateway to a dimension of cosmic dread that defies comprehension.
+                    Infiltrate the remnants of a fallen empire in this dark sci-fi isometric action game where extraction meets base defense. Extract valuable loot, establish defenses against hostile fanatics, and unlock the gateway to a dimension of cosmic dread that defies comprehension. Coming to Steam in 2025.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
