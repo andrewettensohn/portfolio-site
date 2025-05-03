@@ -24,7 +24,7 @@ export default function Omen() {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <iframe src='https://youtu.be/_xJAHTOpxso'
+                    <iframe src='https://www.youtube.com/embed/_xJAHTOpxso?si=YpO7aad-vzjwt7t0'
                         frameBorder='0'
                         allow='encrypted-media'
                         width="100%"
