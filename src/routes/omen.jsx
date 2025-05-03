@@ -18,20 +18,6 @@ export default function Omen() {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12}>
-                    <Typography>
-                        This will be my first commercial release of a personal project I've made and is a collaboration between myself, Bryce Bresnan, and Quinn Richardson. Omen will be coming to Steam for Windows in 2025.
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <iframe src='https://www.youtube.com/embed/_xJAHTOpxso?si=YpO7aad-vzjwt7t0'
-                        frameBorder='0'
-                        allow='encrypted-media'
-                        width="100%"
-                        height="800"
-                        title='video'
-                    />
-                </Grid>
                 <Grid item xs={6}>
                     <img
                         srcSet={imgData[0]}
@@ -44,6 +30,15 @@ export default function Omen() {
                     <Typography>
                     Infiltrate the remnants of a fallen empire in this dark sci-fi isometric action game where extraction meets base defense. Extract valuable loot, establish defenses against hostile fanatics, and unlock the gateway to a dimension of cosmic dread that defies comprehension.
                     </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <iframe src='https://www.youtube.com/embed/_xJAHTOpxso?si=YpO7aad-vzjwt7t0'
+                        frameBorder='0'
+                        allow='encrypted-media'
+                        width="100%"
+                        height="800"
+                        title='video'
+                    />
                 </Grid>
                 <Grid item xs={12}>
                     <img
@@ -67,7 +62,7 @@ export default function Omen() {
 }
 
 const imgData = [
-    'omen/shotb.png',
+    'omen/HeaderCapsule.png',
     'omen/shote.png',
     'omen/shotf.png',
 ]
