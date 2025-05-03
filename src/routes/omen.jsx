@@ -20,11 +20,11 @@ export default function Omen() {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography>
-                        This will be my first commercial release of a personal project I've made and is a collaboration between myself and my friend Bryce Bresnan. Omen will be coming to Steam for Windows in 2025.
+                        This will be my first commercial release of a personal project I've made and is a collaboration between myself, Bryce Bresnan, and Quinn Richardson. Omen will be coming to Steam for Windows in 2025.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <iframe src='https://www.youtube.com/embed/cSpWw-dj4qY'
+                    <iframe src='https://youtu.be/_xJAHTOpxso'
                         frameBorder='0'
                         allow='encrypted-media'
                         width="100%"
@@ -42,19 +42,8 @@ export default function Omen() {
                 </Grid>
                 <Grid item xs={6}>
                     <Typography>
-                        Take on the role of a freelance starship captain in a dark action roguelike. Fight your way past fleets of enemy ships in fast paced combat, delve into ruined megastructures, and reach the heart of a lost sector to discover its terrible secrets.
+                    Infiltrate the remnants of a fallen empire in this dark sci-fi isometric action game where extraction meets base defense. Extract valuable loot, establish defenses against hostile fanatics, and unlock the gateway to a dimension of cosmic dread that defies comprehension.
                     </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography>
-                        Key Features:
-                    </Typography>
-                    <ul>
-                        <li>Roguelike - Death means the loss of your ship's inventory. Keep items in a stash to have them persist between expeditions and start a new ship to carry on the exploration of the lost sector.</li>
-                        <li>Fast Paced Combat - Gain mastery of dozens of different weapon types and battle against a variety of enemies that will test reflexes and the strength of your ship's build.</li>
-                        <li>Progression - Level up your expedition's knowledge to use the loot you acquire from defeated enemies. Unlock new ship hulls ranging from nimble fighters to hulking capital ships with their own fleets of fighters.</li>
-                        <li>Randomized Regions - The lost sector is made of regions which are made of levels. Which region you get next during your expedition is randomly pulled from a deck.</li>
-                    </ul>
                 </Grid>
                 <Grid item xs={12}>
                     <img
