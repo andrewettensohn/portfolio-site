@@ -165,9 +165,9 @@ const workExperienceInfo = [
 const descriptionDataPersonalProjects = [
   {
     name: "Omen",
-    type: "Godot 4 Game for Steam Release",
+    type: "Lead Dev on an Action Roguelite Coming to Steam",
     img: 'omen/MainCapsule.png',
-    page: '/omen'
+    page: '/https://store.steampowered.com/app/2859970/Omen/'
   },
   {
     name: "Fell Deeds",
