@@ -167,7 +167,7 @@ const descriptionDataPersonalProjects = [
     name: "Omen",
     type: "Lead Dev on an Action Roguelite Coming to Steam",
     img: 'omen/MainCapsule.png',
-    page: '/https://store.steampowered.com/app/2859970/Omen/'
+    page: 'https://store.steampowered.com/app/2859970/Omen/'
   },
   {
     name: "Fell Deeds",
